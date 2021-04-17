@@ -10,9 +10,17 @@ myWeather is a simple web application that allows the user to view their local w
 
 - myWeather uses the OpenWeatherMap API - https://www.openweathermap.org/api
 
+## User Stories
+
+- As a user, when I open the app, I want to be receive the weather of my current location.
+
+- As a user, I can click the toggle unit button so that I can toggle between Fahrenheit and Celsius and understand the temperature
+
+- As a user, I want to change the location so that I can receive the weather of any location I choose
+
 ## Credits
 
-This application is largely based off of the WeatherJS project found in Brad Traversy's [Learn JavaScript from the Beginning](https://www.udemy.com/course/modern-javascript-from-the-beginning/), available on Udemy for purchase.
+This application was originally based off of the WeatherJS project found in Brad Traversy's [Learn JavaScript from the Beginning](https://www.udemy.com/course/modern-javascript-from-the-beginning/), available on Udemy for purchase.
 
 ## License
 
