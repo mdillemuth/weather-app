@@ -9,8 +9,10 @@ class Weather {
   // Fetching weather from OpenWeatherMap API
   async getWeather() {
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=${this.apiKey}`
+      `http://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=imperial&appid=${this.apiKey}`
     )
+    // API returns temperature in Kelvin by default
+    // Use units=imperial for Fahrenheit, units=metric for Celsius
 
     const responseData = await response.json()
 
