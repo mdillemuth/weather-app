@@ -1,3 +1,7 @@
 body {
   min-height: 100vh;
 }
+
+th:nth-of-type(2) {
+  font-weight: normal;
+}

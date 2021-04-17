@@ -13,7 +13,6 @@ class Weather {
     )
     // API returns temperature in Kelvin by default
     // Use units=imperial for Fahrenheit, units=metric for Celsius
-
     const responseData = await response.json()
 
     return responseData
