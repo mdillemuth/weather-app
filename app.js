@@ -1,9 +1,29 @@
-// Initialize classes
-const weather = new Weather('Tampa', 'FL')
+// Init storage object
+const storage = new Storage()
+// Get stored location data
+const weatherLocation = storage.getLocationData()
+// Initialize weather object
+const weather = new Weather(weatherLocation.city, weatherLocation.state)
+// Initialize ui object
 const ui = new UI()
 
-// Fetch data on DOM load
-document.addEventListener('DOMContentLoaded', getWeather())
+// Fetch weather data when page loads
+document.addEventListener('DOMContentLoaded', getWeather)
+
+// Change location
+$('#w-change-btn').click(function () {
+  // Select form input values
+  const city = $('#city').val()
+
+  // Update state of weather class
+  weather.changeLocation(city)
+
+  // Refresh UI with new data
+  getWeather()
+
+  // Close the modal with jQuery
+  $('#locModal').modal('hide')
+})
 
 // Fetches data and passes to UI components
 function getWeather() {
@@ -11,7 +31,6 @@ function getWeather() {
     .getWeather()
     .then((results) => {
       ui.paint(results)
-      console.log(results)
     })
     .catch((error) => console.log(error))
 }

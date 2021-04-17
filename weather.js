@@ -1,9 +1,8 @@
 // Create a "Weather" class
 class Weather {
-  constructor(city, state) {
+  constructor(city) {
     this.apiKey = 'a05d18c0f4829009d27d9acd4893d1f1'
     this.city = city
-    this.state = state
   }
 
   // Fetching weather from OpenWeatherMap API
@@ -19,8 +18,7 @@ class Weather {
   }
 
   // Change weather location (city , state)
-  changeLocation(city, state) {
+  changeLocation(city) {
     this.city = city
-    this.state = state
   }
 }
