@@ -1,24 +1,24 @@
 # Simple Weather App
 
-A simple web application that allows the user to view their local weather as well as the weather of any city they choose.
+A small web application that allows the user to view their local weather as well as the weather of any city they choose.
+
+## Development Screenshots
+
+![app screenshot](simple-weather-app.png)
 
 ## Technology Used
 
-- This app has been built with HTML, CSS, and JS.
+- This app has been built with HTML, CSS (Bootstrap), JS (jQuery)
 
-- Bootstrap is used for UI
-
-- myWeather uses the OpenWeatherMap API - https://www.openweathermap.org/api
-
-## User Stories
-
-- As a user, when I open the app, I want to be receive the weather of my current location.
-
-- As a user, I want to change the location so that I can receive the weather of any location I choose
+- OpenWeather API https://openweathermap.org/api
 
 ## Credits
 
-This application was originally based off of the WeatherJS project found in Brad Traversy's [Learn JavaScript from the Beginning](https://www.udemy.com/course/modern-javascript-from-the-beginning/), available on Udemy for purchase.
+The first iteration of this application was originally based off of the WeatherJS project found in Brad Traversy's [Learn JavaScript from the Beginning](https://www.udemy.com/course/modern-javascript-from-the-beginning/), available on Udemy for purchase.
+
+## Future Plans
+
+If I decide to invest more time into this project, I would like to work with the AccuWeather API - https://developer.accuweather.com/ and create a more robust 'dashboard' like application.
 
 ## License
 
