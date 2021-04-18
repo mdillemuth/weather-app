@@ -18,21 +18,23 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Simple Weather</title>
   </head>
-  <body class="bg-secondary px-3 position-relative">
+  <body class="bg-zig-zag px-3 position-relative">
     <!-- Weather container -->
     <main class="container">
       <div class="row">
         <div
-          class="col-md-6 col-lg-4 bg-info mx-auto text-center mt-5 p-4 rounded"
+          class="col-md-6 col-lg-4 bg-primary mx-auto text-center mt-5 p-4 rounded"
         >
-          <h1 id="w-location"></h1>
+          <h1 class="text-light mb-3 h2">Weather App</h1>
+          <h2 id="w-location" class="display-3 text-warning fw-normal"></h2>
+          <p id="w-time" class="text-light fw-light mb-0"></p>
           <div class="d-flex justify-content-evenly align-items-center">
             <img id="w-icon" class="mr-4" />
-            <h2 id="w-temp" class="h2 display-1 fw-bold ml-4"></h2>
+            <h2 id="w-temp" class="h2 display-2 fw-bold ml-4 text-light"></h2>
           </div>
-          <h3 id="w-desc" class="text-white fw-light mb-3"></h3>
+          <h3 id="w-desc" class="text-light fw-light mb-3"></h3>
 
-          <table class="table table-info table-striped table-hover">
+          <table class="table table-secondary table-striped table-hover mb-4">
             <tr>
               <th>Day High</th>
               <th id="w-temp-high"></th>
@@ -51,14 +53,24 @@
             </tr>
           </table>
           <hr class="" />
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#locModal"
-          >
-            Change City
-          </button>
+
+          <div class="d-flex justify-content-evenly">
+            <button
+              type="button"
+              class="btn btn-light text-primary"
+              id="w-change-unit-btn"
+            >
+              Toggle Units
+            </button>
+            <button
+              type="button"
+              class="btn btn-warning"
+              data-bs-toggle="modal"
+              data-bs-target="#locModal"
+            >
+              Change City
+            </button>
+          </div>
         </div>
       </div>
     </main>
@@ -105,10 +117,13 @@
         </div>
       </div>
     </div>
-    <footer class="bg-dark position-absolute fixed-bottom">
-      <p class="text-white text-center pb-2 pt-4">
+    <footer class="bg-secondary position-absolute fixed-bottom">
+      <p class="text-white text-center pb-4 pt-5">
         Created by Matt Dillemuth |
-        <a class="text-info" href="https://mattdillemuth.com"
+        <a
+          class="text-warning text-decoration-none"
+          href="https://mattdillemuth.com"
+          target="_blank"
           >mattdillemuth.com</a
         >
       </p>

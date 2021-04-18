@@ -1,7 +1,7 @@
 class Storage {
   constructor() {
     this.city
-    this.defaultCity = 'Memphis'
+    this.defaultCity = 'Berlin'
   }
 
   getLocationData() {
@@ -17,7 +17,7 @@ class Storage {
     }
   }
 
-  setLocationData(city, state) {
+  setLocationData(city) {
     localStorage.setItem('city', city)
   }
 }

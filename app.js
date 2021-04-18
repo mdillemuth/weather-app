@@ -3,7 +3,7 @@ const storage = new Storage()
 // Get stored location data
 const weatherLocation = storage.getLocationData()
 // Initialize weather object
-const weather = new Weather(weatherLocation.city, weatherLocation.state)
+const weather = new Weather(weatherLocation.city)
 // Initialize ui object
 const ui = new UI()
 
@@ -12,17 +12,17 @@ document.addEventListener('DOMContentLoaded', getWeather)
 
 // Change location
 $('#w-change-btn').click(function () {
-  // Select form input values
-  const city = $('#city').val()
+  const city = $('#city').val() // form input values
+  weather.changeLocation(city) // update weather object state
+  getWeather() // fetch weather data
+  $('#locModal').modal('hide') // close the modal
+})
 
-  // Update state of weather class
-  weather.changeLocation(city)
-
-  // Refresh UI with new data
-  getWeather()
-
-  // Close the modal with jQuery
-  $('#locModal').modal('hide')
+// Change units (Fahrenheit => Celsius)
+$('#w-change-unit-btn').click(() => {
+  weather.changeUnit() // update unit in weather object state
+  ui.changeUnit() // update unit in ui object state
+  getWeather() // fetch weather data
 })
 
 // Fetches data and passes to UI components
