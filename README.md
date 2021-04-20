@@ -6,7 +6,7 @@ A small web application that allows the user to view weather of a city that they
 
 ## Screenshots
 
-![app screenshot](simple-weather-app.png)
+![app screenshot](screenshot.png)
 
 ## Technology Used
 
@@ -20,9 +20,7 @@ The first iteration of this application was originally based off of the WeatherJ
 
 ## Future Plans
 
-If I decide to invest more time into this project, I would like to work with the AccuWeather API - https://developer.accuweather.com/. It seems to be able to provide more comprehensive endpoints for location. The only issue with this small 'app' was getting the OpenWeather API to recognize the difference between a city like "Miami, FL" and "Miami, OH" or international data.
-
-I
+If I decide to invest more time into this project, I would like to work with the AccuWeather API - https://developer.accuweather.com/. It seems to be able to provide more comprehensive endpoints for location.
 
 ## License
 
